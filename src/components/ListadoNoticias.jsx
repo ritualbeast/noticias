@@ -4,10 +4,11 @@ import Noticia from "./Noticia"
 import Pagination from '@mui/material/Pagination';
 import Stack from "@mui/material/Stack";
 const ListadoNoticias = () => {
-  const {noticias, totalPaginas} = useNoticias()
+  const {noticias, totalPaginas, login} = useNoticias()
   console.log(totalPaginas)
   const totalNoticias =  totalPaginas / 20
   
+  console.log(login)
   
   return (
     <>
@@ -18,6 +19,9 @@ const ListadoNoticias = () => {
       variant='h3'>
         Listado de noticias
       </Typography>
+      <Grid>
+        
+      </Grid>
       <Grid
       container
       spacing={2}
